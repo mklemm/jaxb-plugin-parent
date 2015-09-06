@@ -8,7 +8,7 @@
 	<artifactId>jaxb-plugin-parent</artifactId>
 	<version>1.0.5-SNAPSHOT</version>
 
-	<name>Parent POM for mklemm's JAXB XJC plugin projects</name>
+	<name>Parent POM for CodeSup JAXB XJC plugin projects</name>
 	<packaging>pom</packaging>
 
 	<description>
@@ -140,7 +140,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>2.5.2</version>
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<useReleaseProfile>false</useReleaseProfile>

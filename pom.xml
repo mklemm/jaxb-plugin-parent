@@ -6,7 +6,7 @@
 
 	<groupId>net.codesup.util</groupId>
 	<artifactId>jaxb-plugin-parent</artifactId>
-	<version>1.4.0-SNAPSHOT</version>
+	<version>1.3.0-SNAPSHOT</version>
 
 	<name>Parent POM for CodeSup JAXB XJC plugin projects</name>
 	<packaging>pom</packaging>

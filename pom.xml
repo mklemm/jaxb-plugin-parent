@@ -310,6 +310,9 @@
 								<goals>
 									<goal>sign</goal>
 								</goals>
+								<configuration>
+									<executable>/opt/homebrew/bin/gpg</executable>
+								</configuration>
 							</execution>
 						</executions>
 						<configuration>

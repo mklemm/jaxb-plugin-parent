@@ -15,7 +15,8 @@
 	<description>
 		Provides base settings and dependencies for other jaxb-plugin projects.
 	</description>
-	<url>https://github.com/mklemm/jaxb-plugin-parent</url>
+	<url>https://mklemm.github.io/jaxb-plugin-parent</url>
+
 	<licenses>
 		<license>
 			<name>MIT License</name>
@@ -40,7 +41,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/mklemm/jaxb-plugin-parent.git</connection>
 		<developerConnection>scm:git:https://github.com/mklemm/jaxb-plugin-parent.git</developerConnection>
-		<url>https://github.com/mklemm/jaxb-plugin-parent.git</url>
+		<url>https://github.com/mklemm/jaxb-plugin-parent</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -146,7 +147,17 @@
 					<maxmemory>512m</maxmemory>
 				</configuration>
 			</plugin>
-
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>4.0.0-M13</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.doxia</groupId>
+						<artifactId>doxia-decoration-model</artifactId>
+						<version>1.11.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
@@ -195,17 +206,6 @@
 							<argument>README.md</argument>
 						</arguments>
 					</configuration>
-				</plugin>
-				<plugin>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>4.0.0-M13</version>
-					<dependencies>
-						<dependency>
-							<groupId>org.apache.maven.doxia</groupId>
-							<artifactId>doxia-module-markdown</artifactId>
-							<version>1.11.1</version>
-						</dependency>
-					</dependencies>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -308,5 +308,10 @@
 			</build>
 		</profile>
 	</profiles>
-
+	<distributionManagement>
+		<site>
+			<id>github</id>
+			<url>scm:git:https://github.com/mklemm/jaxb-plugin-parent.git</url>
+		</site>
+	</distributionManagement>
 </project>

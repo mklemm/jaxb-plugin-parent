@@ -5,6 +5,8 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 *.iml
+.idea
+local
 .DS_Store
 ~*
 *~

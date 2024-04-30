@@ -250,22 +250,32 @@
 						</executions>
 					</plugin>
 					<plugin>
-						<artifactId>maven-release-plugin</artifactId>
-						<version>2.5.3</version>
+						<groupId>com.github.danielflower.mavenplugins</groupId>
+						<artifactId>multi-module-maven-release-plugin</artifactId>
+						<version>3.6.4</version>
 						<configuration>
-							<autoVersionSubmodules>true</autoVersionSubmodules>
-							<useReleaseProfile>false</useReleaseProfile>
-							<releaseProfiles>release</releaseProfiles>
-							<goals>deploy</goals>
+							<releaseGoals>
+								<releaseGoal>deploy</releaseGoal>
+							</releaseGoals>
 						</configuration>
-						<dependencies>
-							<dependency>
-								<groupId>org.apache.maven.scm</groupId>
-								<artifactId>maven-scm-provider-gitexe</artifactId>
-								<version>1.10.0</version>
-							</dependency>
-						</dependencies>
 					</plugin>
+					<!--					<plugin>-->
+					<!--						<artifactId>maven-release-plugin</artifactId>-->
+					<!--						<version>2.5.3</version>-->
+					<!--						<configuration>-->
+					<!--							<autoVersionSubmodules>true</autoVersionSubmodules>-->
+					<!--							<useReleaseProfile>false</useReleaseProfile>-->
+					<!--							<releaseProfiles>release</releaseProfiles>-->
+					<!--							<goals>deploy</goals>-->
+					<!--						</configuration>-->
+					<!--						<dependencies>-->
+					<!--							<dependency>-->
+					<!--								<groupId>org.apache.maven.scm</groupId>-->
+					<!--								<artifactId>maven-scm-provider-gitexe</artifactId>-->
+					<!--								<version>1.10.0</version>-->
+					<!--							</dependency>-->
+					<!--						</dependencies>-->
+					<!--					</plugin>-->
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>

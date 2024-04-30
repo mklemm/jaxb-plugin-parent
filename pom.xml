@@ -187,6 +187,7 @@
 					<version>3.0.0</version>
 					<configuration>
 						<scmBranch>gh-pages</scmBranch>
+						<content>target/${project.artifactId}</content>
 					</configuration>
 				</plugin>
 				<plugin>
